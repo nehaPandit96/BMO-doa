@@ -28,6 +28,6 @@ The **BMO Accessibility Test** is an educational resource aimed at helping UI de
 To view the project, simply clone the repository and open the `index.html` file in your web browser.
 
 ```bash
-git clone https://github.com/nehaPandit96/BMO-doa.git
-cd BMO-doa
+git clone https://github.com/nehaPandit96/BMO_Accessibility_Test.git
+cd BMO_Accessibility_Test
 open index.html
