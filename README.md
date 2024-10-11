@@ -7,10 +7,6 @@ This project is designed to demonstrate and test accessibility features for UI d
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Accessibility Considerations](#accessibility-considerations)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
