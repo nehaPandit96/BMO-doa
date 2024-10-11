@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta charset="utf-8">
+		<title>BMO - UI AODA Test</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/your-styles-here.css" />
+		<link rel="stylesheet" href="fonts/heebo.css" />
+		<script src="js/your-js-here.js"></script> 
+		
+
+	</head>
+	<body>
+		<div class="test-container">
+			<h1 class="test-heading">BMO Accessiblity Test for UI Devs</h1>
+
+			<header>
+				<h1 class="test-heading">Create an accessible navigation</h1>
+				<button id="toggle-mobile" aria-controls="header-nav" aria-expanded="false" style="display: none;">Show Navigation</button>
+				<nav id="header-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Banking</a></li>
+						<li><a href="#">Hockey</a></li>
+						<li><a href="#">Good Food</a></li>
+						<li><a href="#">UI Development</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="main-content" id="main-content">
+				<h1 class="test-heading">Create an accessible form</h1>
+			
+				<!--  Input Form Section -->
+				<h2 class="test-heading2">Text Inputs</h2>
+			
+				<form>
+					<div class="form-div">
+						<label class="form-label" for="input-text">Insert Text </label>
+						<input required class="form-input" type="text" id="input-text" placeholder="Enter a text here" aria-required="true">
+					</div>
+				
+					<div class="form-div">
+						<label class="form-label" for="input-number">Insert Number </label>
+						<input required  class="form-input" type="number" id="input-number" placeholder="Enter a number here" aria-required="true">
+					</div>
+				
+					<div class="form-div">
+						<label class="form-label" for="input-email">Insert Email </label>
+						<input required  class="form-input" type="email" id="input-email" placeholder="Enter your email address here" aria-required="true">
+					</div>
+				
+					<h2 class="test-heading2">Radio Inputs </h2>
+					<fieldset>
+						<legend>Please select one option:</legend>
+				
+						<div class="radio-btn">
+							<input type="radio" id="radioInput1" name="options" value="option1" aria-required="true">
+							<label class="form-label" for="radioInput1">Option 1</label>
+						</div>
+				
+						<div class="radio-btn">
+							<input type="radio" id="radioInput2" name="options" value="option2" aria-required="true">
+							<label class="form-label" for="radioInput2">Option 2</label>
+						</div>
+				
+						<div class="radio-btn">
+							<input type="radio" id="radioInput3" name="options" value="option3" aria-required="true">
+							<label class="form-label" for="radioInput3">Option 3</label>
+						</div>
+					</fieldset>
+				
+					<h2 class="test-heading2">Multiline Input</h2>
+					<div class="form-div">
+						<label class="form-label" for="textarea-input">Multiline Input </label>
+						<textarea  class="form-input" id="textarea-input" rows="4" placeholder="Enter your message here" aria-required="true"></textarea>
+					</div>
+				
+					<button type="submit" class="submit-btn">Submit Form</button>
+				</form>
+			
+				
+				<div class="modal-section">
+					<h2 class="test-heading2">Modal Section</h2>
+					<h3 class="test-heading">Bonus Marks: Create an accessible modal with Keyboard Trap.</h3>
+					<button class="modal-trigger" aria-haspopup="dialog" aria-controls="modal">Open Modal</button>
+					<div class="overlay" aria-hidden="true">
+						<div class="modal" id="modal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description" tabindex="-1">
+							<button class="close-modal" aria-label="Close Modal">Close Modal</button>
+							<div class="modal-header">
+								<h1 id="modal-title">This is a modal title 1</h1>
+							</div>
+							<div class="modal-body" id="modal-description">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			
+			<footer>
+				<h1 class="test-heading">footer</h1>
+			</footer>
+		</div>	
+		
+	</body>	
+</html>
